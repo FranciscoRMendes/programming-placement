@@ -1,0 +1,12 @@
+
+
+
+n = int(text[0].split(' ')[0])
+V = int(text[0].split(' ')[1])
+boxes = []
+for i in range(1,n):
+    tx = text[i]
+    v = int(tx.split(' ')[0]) *  int(tx.split(' ')[1]) *  int(tx.split(' ')[2])
+    boxes.append(v-V)
+    
+print(max(boxes))
